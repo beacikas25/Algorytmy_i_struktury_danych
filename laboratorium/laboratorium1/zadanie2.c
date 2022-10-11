@@ -6,32 +6,56 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 
-  void main(void) {
-    double a, x, xn, hx=0;
-    
-    printf("Podaj dodatnia zmienna a= ");
-    scanf("%d", &a);
-    printf("Podaj dodatnia zmienna x0= ");
-    scanf("%d", &x0);
-    printf ("Podaj dodatnia zmienna xn= ");
-    scanf("%d", &xn);
+void obl_(float, float, float, int);
+int validacja(float, float, float, int);
 
-
-    while(hx=0) {
-     printf("Podaj dodatni krok hx= ");
-      scanf("%d", &hx);
+int main() {
+  int x = 0, xn = 0;
+  float a = 0, hx = 0;
+  do{
+    printf("wprowadz liczba a=");
+    scanf(" %f", &a);
+    printf("wprowadz liczba x=");
+    scanf(" %d", &x);
+    printf("wprowadz liczba hx=");
+    scanf(" %f", &hx);
+    printf("wprowadz liczba nx=");
+    scanf(" %d", &xn);
     }
-   // printf("Podaj zmienna hx, ktora >0 ");
-    //scanf("%d", &hx);
+    while (1 != validacja(x, a, hx, xn));
+    obl_(x, a, hx, xn);
+    return 0;
+}
 
-    while (x<=xn){
-      printf("%d=%d*%d^2"\n, (a*x*x), a, x);
-
-        x=x+hx;
-      
-    }
-    return
+int validacja(float x, float a, float hx, int xn) {
+  if (x <= xn) {
+    printf("wrong: ");
+    return 0;
+  } 
+  else if (a == 0) {
+    printf("wrong: ");
+    return 0;
+  } 
+  else if (hx + x > xn) {
+    printf("wrong: ");
+    return 0;
+  } 
+  else {
+    printf("200OK");
+    return 1;
   }
-    
+}
+
+void obl_(float x, float a, float hx, int xn) {
+  float y;
+  while (x <= xn) {
+    printf("x=%.1f a=%.1f ", x, a);
+    y = a * pow(x, 2);
+    x = x + hx;
+    printf("y=%.1f\n", y);
+  }
+  
+} 
