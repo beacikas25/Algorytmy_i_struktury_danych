@@ -6,57 +6,78 @@
 #include <stdlib.h>
 
 
-int find(float item, float *arr);
+int find(int item, int *arr);
+void insert(int item, int pos, int *arr);
+void remove_a(int pos, int *arr)
 
-void insert(float item, int pos, float *arr);
 
-//void remove_a(float pos, float *arr);
+{
+  int i;
+  int size = sizeof(arr)/sizeof(arr[0]);
+  
+    if(pos < 0 || pos > size)
+    {
+        printf("wpisz od 1 do %d", size);
+    }
+    else
+    {
+        for(i=pos-1; i<size-1; i++)
+        {
+            arr[i] = arr[i + 1];
+        }
+        size--;
+        printf("\nElementy arraya: ");
+        for(i=0; i<size; i++)
+        {
+            printf("%d\t", arr[i]);
+        }
+    }
+}
 
-int size(float *arr);
-
-float findMax(float *arr);
-
-float findMin(float *arr);
-
-void printTable(float *arr);
+int size(int *arr);
+int findMax(int *arr);
+int findMin(int *arr);
+void printTable(int *arr);
 
 void main(void) {
-  float arr[100] = {3.3, 4.4, 5.5, 6.6, 7.7, 8.8};
-
-  int pozycja = find(4.4, arr);
+  int arr[100] = {4.4, 5.5, 6.6, 7.7};
+  
+  int pozycja = find(5.5, arr);
   printf("Pozycja: %d\n", pozycja);
-  float max = findMax(arr);
-  printf("Maks: %f\n", max);
-  float min = findMin(arr);
-  printf("Min: %f\n", min);
+  int max = findMax(arr);
+  printf("Maksimum: %d\n", max);
+  int min = findMin(arr);
+  printf("Minimum: %d\n", min);
   printTable(arr);
+  int okey = 2;
+  remove_a(okey, arr);
   
   return;
 }
 
-int find(float item, float *arr){
+int find(int item, int *arr){
   for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
     if(item == arr[i]){
       return i;
     }
   }
-  return -2;
+  return -1;
 }
 
-void insert(float item, int pos, float *arr){
+void insert(int item, int pos, int *arr){
   arr[pos] = item;
 }
 
 //void remove(float pos, float *arr);
 
-int size(float *arr){
+int size(int *arr){
   int i = (sizeof(arr)/sizeof(arr[0]));
   printf("\n%d",i);
   return i;
 }
 
-float findMax(float *arr){
-  float max = arr[0];
+int findMax(int *arr){
+  int max = arr[0];
   for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
     if(max < arr[i]){
       max = arr[i];
@@ -65,8 +86,8 @@ float findMax(float *arr){
   return max;
 }
 
-float findMin(float *arr){
-  float min = arr[0];
+int findMin(int *arr){
+  int min = arr[0];
   for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
     if(min > arr[i]){
       min = arr[i];
@@ -75,8 +96,15 @@ float findMin(float *arr){
   return min;
 }
 
-void printTable(float *arr){
+void printTable(int *arr){
   for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    printf(" %.2f ", arr[i]);
+    printf(" %.d ", arr[i]);
   }
+  
 }
+
+
+
+
+
+
