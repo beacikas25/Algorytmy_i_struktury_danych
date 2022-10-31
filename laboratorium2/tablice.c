@@ -4,107 +4,92 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#define arr_size 100 
 
 
 int find(int item, int *arr);
-void insert(int item, int pos, int *arr);
-void remove_a(int pos, int *arr)
-
-
-{
-  int i;
-  int size = sizeof(arr)/sizeof(arr[0]);
-  
-    if(pos < 0 || pos > size)
-    {
-        printf("wpisz od 1 do %d", size);
-    }
-    else
-    {
-        for(i=pos-1; i<size-1; i++)
-        {
-            arr[i] = arr[i + 1];
-        }
-        size--;
-        printf("\nElementy arraya: ");
-        for(i=0; i<size; i++)
-        {
-            printf("%d\t", arr[i]);
-        }
-    }
-}
-
-int size(int *arr);
-int findMax(int *arr);
+void insert(int item, int possition, int *arr);
+void remove_a(int possition, int *arr);
+int size();
+int findMax (int *arr);
 int findMin(int *arr);
 void printTable(int *arr);
 
-void main(void) {
-  int arr[100] = {4.4, 5.5, 6.6, 7.7};
-  
-  int pozycja = find(5.5, arr);
-  printf("Pozycja: %d\n", pozycja);
-  int max = findMax(arr);
-  printf("Maksimum: %d\n", max);
-  int min = findMin(arr);
-  printf("Minimum: %d\n", min);
-  printTable(arr);
-  int okey = 2;
-  remove_a(okey, arr);
-  
-  return;
-}
 
-int find(int item, int *arr){
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(item == arr[i]){
-      return i;
-    }
+int main ()
+{
+  int arr[arr_size];
+  srand(time(NULL)); //generator liczb losowych, który działa w obecnym czasie
+  for(int i=0; i<arr_size; i++){
+    arr[i]=rand()%1000;
   }
-  return -1;
+  printTable(arr);//
+  printf("\n");
+  printf("max: %d\n", findMax(arr));
+  printf("min: %d\n", findMin(arr));
+  printf("size: %d\n", size());
+  find(2, arr);//wykorzystana metoda find
+  remove_a(1, arr);//metoda remove
+  printTable(arr);//
 }
 
-void insert(int item, int pos, int *arr){
-  arr[pos] = item;
+
+int size(){
+  return arr_size;
 }
-
-//void remove(float pos, float *arr);
-
-int size(int *arr){
-  int i = (sizeof(arr)/sizeof(arr[0]));
-  printf("\n%d",i);
-  return i;
-}
-
 int findMax(int *arr){
   int max = arr[0];
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(max < arr[i]){
-      max = arr[i];
+      for (int i=0; i<arr_size; i++){
+        if(max < arr[i]){
+          max = arr[i];
+        }
+      }
+      return max;
     }
-  }
-  return max;
-}
 
 int findMin(int *arr){
   int min = arr[0];
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    if(min > arr[i]){
-      min = arr[i];
-    }
-  }
-  return min;
+      for (int i=0; i<arr_size; i++){
+        if(min > arr[i]){
+          min = arr[i];
+        }
+      }
+      return min;
 }
 
 void printTable(int *arr){
-  for(int i = 0; i < sizeof(arr)/sizeof(arr[0]); i++){
-    printf(" %.d ", arr[i]);
-  }
-  
+  printf("elementy tablicy:\n");
+  printf("-------\n");
+  for (int i=0; i<arr_size; i++){
+    printf("element tablicy %d: %d\n", i, arr[i]);
+  }  
+  printf("-------\n");
 }
 
+int find(int item, int *arr){
+  for(int i=0; i<arr_size; i++){
+    if(item == arr[i]){
+      printf("element jest w tablicy\n");
+      return 1;
+    }
+  }
+  printf("elementu nie ma w tablicy\n");
+  return 0;
+}
 
+void insert(int item, int possition, int *arr){
+  arr[possition] = item;
+}
 
-
-
-
+void remove_a(int possition, int *arr){
+  int p_arr[size() - 1];
+  for (int i=1; i<size(); i++) {
+    if (i != possition) {
+    } else {
+      i++;
+      p_arr[i--] = arr[i];
+    }
+  }
+  *arr = *p_arr;
+}
