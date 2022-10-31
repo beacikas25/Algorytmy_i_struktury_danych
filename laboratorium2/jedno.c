@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 
     typedef struct Item {
@@ -33,7 +34,7 @@ void printList(typ *head);
 
 int isEmpty(typ *head); 
 
-void next(typ **head, int cyfra);       
+void next(typ **head, int num);       
 
 void previous(typ **head, float value);  
 
@@ -214,10 +215,10 @@ int main(void){
       }
     }
 
-    void next(typ **head, int cyfra){
+    void next(typ **head, int num){
       if (*head == NULL){
         *head = (typ*)malloc(sizeof(typ));
-        (*head)->value = cyfra;
+        (*head)->value = num;
         (*head)->next = NULL;
       } 
       else{
@@ -226,7 +227,7 @@ int main(void){
           current = current->next;
         }
         current->next = (typ*)malloc(sizeof(typ));
-        current->next->value = cyfra;
+        current->next->value = num;
         current->next->next = NULL;
       }
     }
