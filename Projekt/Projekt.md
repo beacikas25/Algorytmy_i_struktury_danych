@@ -58,7 +58,7 @@ Przykład użycia algorytmu sita Eratostenesa może być w znalezieniu wszystkic
 jest zadaną liczbą).
 
 ### - Realizacja w C dla algorytmu sita Eratostenesa:
-[Algorytm  sita Eratostenesa](***)
+[Algorytm  sita Eratostenesa](https://github.com/beacikas25/Algorytm_sita_Eratostenesa/blob/main/Algorytm_sita_Eratostenesa.c)
 
 ### Jake dane na wejsciu w algorytm, jakie na wyjsciu:
 | Wejscie  | 100 | 
