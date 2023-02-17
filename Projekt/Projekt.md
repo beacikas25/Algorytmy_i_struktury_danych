@@ -172,5 +172,38 @@ v 	 – 	wartość wprowadzana do elementu
 Lista z dołączonym na początku elementem o wartości v.
 
 ## Dane pomocnicze:
+p 	 –  	wskazanie elementu list
+
+## Lista kroków:
+```
+K01: 	Utwórz nowy element
+
+K02: 	p  ← adres nowego elementu 
+
+K03: 	( p→data  ) ← v 	      //umieszczamy dane w nowym elemencie
+
+K04: 	( p→prev  ) ← nil 	      //pierwszy element nie posiada poprzednika
+
+K05: 	( p→next  ) ← L.head 	      //następnikiem będzie obecny pierwszy element listy
+
+K06: 	L.head  ← p 	              //dołączamy element do początku listy
+
+K07 	L.count  ← L.count  + 1       //zwiększamy licznik elementów o 1
+
+K08: 	Jeśli ( p→next  ) ≠ nil,
+
+        to ( ( p→next  )→prev  ) ← p
+
+        inaczej L.tail  ← p
+
+K09: 	Zakończ
+```
+
+## Zródła
+[Algorytm sita Eratostenesa](https://eduinf.waw.pl/inf/alg/001_search/0011.php)
+
+[Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](https://eduinf.waw.pl/inf/alg/001_search/0057.php)
+
+[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](https://eduinf.waw.pl/inf/alg/001_search/0087.php)
 
 
