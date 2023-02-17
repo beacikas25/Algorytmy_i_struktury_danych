@@ -66,7 +66,7 @@ jest zadaną liczbą).
 | Wyjscie     |   2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 771, 73, 79, 83, 89, 97   |
 
 ###<a name ="Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha"></a>
-##Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
+#Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
 ###Opis algorytmu wyszukiwania najdłuższego wspólnego podłańcucha
 Algorytm wyszukiwania najdłuższego wspólnego podłańcucha (ang. Longest Common Subsequence, LCS) jest 
 algorytmem, który służy do znajdowania najdłuższego podciągu dwóch lub więcej sekwencji, takiego że każdy element tego 
