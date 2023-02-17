@@ -2,7 +2,7 @@
 ## Tytul: Algorytm sita Eratostenesa. Algorytm wyszukiwania najdłuższego wspólnego podłańcucha. Algorytm dołączania nowego elementu do końca listy dwukierunkowej
 ## Data 2023.02.14
 ## Praca wykonala Beata Markevic
-Tresc:
+Treść:
 
 [Algorytm sita Eratostenesa](#Algorytm-sita-Eratostenesa)
 
@@ -29,7 +29,7 @@ Algorytm działa w następujący sposób:
     wykonania jest proporcjonalny do n log log n. Jest to jeden z najszybszych algorytmów do wyznaczania liczb pierwszych i 
     jest często stosowany w różnych zastosowaniach, takich jak kryptografia, teoria liczb i wiele innych.
 
-### Pseudokod dla algorytmu sita Eratostenesa:
+### - Pseudokod dla algorytmu sita Eratostenesa:
 
 ```
 1. Stwórz tablicę o długości n+1, gdzie n jest maksymalnym liczbą do przeszukania
@@ -57,7 +57,7 @@ do n log log n.
 Przykład użycia algorytmu sita Eratostenesa może być w znalezieniu wszystkich liczb pierwszych w zakresie od 2 do n (gdzie n 
 jest zadaną liczbą).
 
-### Realizacja w C dla algorytmu sita Eratostenesa:
+### - Realizacja w C dla algorytmu sita Eratostenesa:
 [Algorytm  sita Eratostenesa](***)
 
 ### Jake dane na wejsciu w algorytm, jakie na wyjsciu:
@@ -65,13 +65,11 @@ jest zadaną liczbą).
 | ------- | ------- |
 | Wyjscie     |   2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 771, 73, 79, 83, 89, 97   |
 
+
 ###<a name ="Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha"></a>
 #Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
 ###Opis algorytmu wyszukiwania najdłuższego wspólnego podłańcucha
-Algorytm wyszukiwania najdłuższego wspólnego podłańcucha (ang. Longest Common Subsequence, LCS) jest 
-algorytmem, który służy do znajdowania najdłuższego podciągu dwóch lub więcej sekwencji, takiego że każdy element tego 
-podciągu występuje w każdej z sekwencji i jest w tej samej kolejności. Algorytm jest często stosowany w różnych dziedzinach, 
-takich jak bioinformatyka, redakcja tekstów i wiele innych.
+Algorytm wyszukiwania najdłuższego wspólnego podłańcucha (ang. Longest Common Subsequence, LCS) jest algorytmem, który służy do znajdowania najdłuższego podciągu dwóch lub więcej sekwencji, takiego że każdy element tego podciągu występuje w każdej z sekwencji i jest w tej samej kolejności. Algorytm jest często stosowany w różnych dziedzinach, takich jak bioinformatyka, redakcja tekstów i wiele innych.
 
 Algorytm działa w następujący sposób:
 
@@ -114,7 +112,7 @@ Złożoność czasowa algorytmu wynosi O(mn), gdzie m i n oznaczają długości 
 ## Przykład użycia algorytmu wyszukiwania najdłuższego wspólnego podłańcucha:
 Algorytm wyszukiwania najdłuższego wspólnego podłańcucha może być używany do porównywania dwóch sekwencji danych, takich jak ciągi DNA, pliki tekstowe lub kody źródłowe, aby znaleźć ich wspólne elementy.
 
-### -Realizacja w C dla algorytmu wyszukiwania najdłuższego wspólnego podłańcucha:
+### - Realizacja w C dla algorytmu wyszukiwania najdłuższego wspólnego podłańcucha:
 
 [Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](***)
 
@@ -124,5 +122,23 @@ Algorytm wyszukiwania najdłuższego wspólnego podłańcucha może być używan
 | Wyjscie     |   5   |
 
 ###<a name ="Algorytm-dołączania-nowego-elementu-do-końca-listy-dwukierunkowej"></a>
+#Algorytm dołączania nowego elementu do końca listy dwukierunkowej
+###Opis algorytmu dołączania nowego elementu do końca listy dwukierunkowej
+Algorytm dodawania nowego elementu do końca listy dwukierunkowej polega na następujących krokach:
 
+1. Tworzenie nowego elementu listy zawierającego wartość, którą chcemy dodawać.
+    2. Przeszukiwanie listy dwukierunkowej w poszukiwaniu ostatniego elementu.
+    3. Ustawienie wskaźnika next ostatniego elementu na nasz nowy element.
+    4. Ustawienie wskaźnika prev naszego nowego elementu na ostatni element.
+### Poniższy pseudokod opisuje powyższe kroki:
+```
+PROCEDURA dodaj_element(wartość)
+    NOWY_ELEMENT = stwórz nowy element listy dwukierunkowej z wartością
+    OSTATNI_ELEMENT = przeszukaj listę dwukierunkową w poszukiwaniu ostatniego elementu
+    OSTATNI_ELEMENT.next = NOWY_ELEMENT
+    NOWY_ELEMENT.prev = OSTATNI_ELEMENT
+KONIEC PROCEDURY
+```
+W powyższym pseudokodzie, procedura dodaj_element przyjmuje jako argument wartość, którą chcemy dodawać do listy dwukierunkowej. Następnie tworzony jest nowy element z tą wartością i przeszukiwana jest lista w poszukiwaniu ostatniego elementu. Wskaźnik next ostatniego elementu ustawiany jest na nasz nowy element, a wskaźnik prev naszego nowego elementu ustawiany jest na ostatni element.
 
+##
