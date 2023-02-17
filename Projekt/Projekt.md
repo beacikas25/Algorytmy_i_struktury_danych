@@ -69,7 +69,7 @@ jest zadaną liczbą).
 
 
 ###<a name ="Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha"></a>
-#Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
+##Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
 ###Opis algorytmu wyszukiwania najdłuższego wspólnego podłańcucha
 Algorytm wyszukiwania najdłuższego wspólnego podłańcucha (ang. Longest Common Subsequence, LCS) jest 
 algorytmem, który służy do znajdowania najdłuższego podciągu dwóch lub więcej sekwencji, takiego że każdy element tego 
