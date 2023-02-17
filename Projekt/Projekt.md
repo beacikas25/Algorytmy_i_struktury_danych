@@ -9,8 +9,7 @@ Tresc:
 
 [Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](#Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha)
 
-[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](#Algorytm-dołączania-nowego-elementu-do-końca-listy-
-dwukierunkowej)
+[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](#Algorytm-dołączania-nowego-elementu-do-końca-listy-dwukierunkowej)
 
 ###<a name ="Algorytm-sita Eratostenesa"></a>
 ## Algorytm sita Eratostenesa
@@ -20,7 +19,7 @@ Jest to jeden z najprostszych i najszybszych algorytmów do tego celu.
 
 Algorytm działa w następujący sposób:
 
- 1. Tworzy się tablicę o długości n+1, gdzie n jest maksymalną liczbą do przeszukania. Wszystkie wartości są inicjowane jako 
+   1. Tworzy się tablicę o długości n+1, gdzie n jest maksymalną liczbą do przeszukania. Wszystkie wartości są inicjowane jako 
  "prawdziwe" (czyli potencjalne liczby pierwsze).
     2. Następnie ustawia się 0 i 1 jako nieprawdziwe (ponieważ 0 i 1 nie są liczbami pierwszymi).
     3. Dla każdej liczby i od 2 do sqrt(n), sprawdza się, czy i jest prawdziwe.
@@ -32,7 +31,7 @@ Algorytm działa w następujący sposób:
     jest często stosowany w różnych zastosowaniach, takich jak kryptografia, teoria liczb i wiele innych.
 
 
-## Pseudokod dla algorytmu sita Eratostenesa:
+## -Pseudokod dla algorytmu sita Eratostenesa:
 
 1. Stwórz tablicę o długości n+1, gdzie n jest maksymalnym liczbą do przeszukania
 2. Zainicjuj wszystkie wartości w tablicy jako "prawdziwe" (czyli liczby pierwsze)
