@@ -113,7 +113,7 @@ Algorytm wyszukiwania najdłuższego wspólnego podłańcucha może być używan
 
 ### - Realizacja w C dla algorytmu wyszukiwania najdłuższego wspólnego podłańcucha:
 
-[Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](***)
+[Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](https://github.com/beacikas25/Algorytm_wyszukiwania_najduzszego_wspolnego_podancucha/blob/main/Algorytm_wyszukiwania_najduzszego_wspolnego_podancucha.c)
 
 ## Jake dane na wejsciu w algorytm, jakie na wyjsciu:
 | Wejscie  | "Beata"  "Beataeae"|
