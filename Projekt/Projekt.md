@@ -18,8 +18,7 @@ Jest to jeden z najprostszych i najszybszych algorytmów do tego celu.
 
 Algorytm działa w następujący sposób:
 
-   1. Tworzy się tablicę o długości n+1, gdzie n jest maksymalną liczbą do przeszukania. Wszystkie wartości są inicjowane jako 
- "prawdziwe" (czyli potencjalne liczby pierwsze).
+    1. Tworzy się tablicę o długości n+1, gdzie n jest maksymalną liczbą do przeszukania. Wszystkie wartości są inicjowane jako "prawdziwe" (czyli potencjalne liczby pierwsze).
     2. Następnie ustawia się 0 i 1 jako nieprawdziwe (ponieważ 0 i 1 nie są liczbami pierwszymi).
     3. Dla każdej liczby i od 2 do sqrt(n), sprawdza się, czy i jest prawdziwe.
     4. Jeśli i jest prawdziwe, to dla każdej liczby j od i^2 do n z krokiem i, ustawia się j jako nieprawdziwe.
@@ -49,6 +48,7 @@ Algorytm sita Eratostenesa jest końcowy, ponieważ w każdym kroku ostatecznie 
 Algorytm sita Eratostenesa jest algorytmem numerycznym służącym do wyznaczania liczb pierwszych w zakresie od 2 do n. 
 Polega na iteracyjnym oznaczaniu liczb nie będących liczbami pierwszymi jako "fałszywe" i pozostawianiu liczb pierwszych 
 jako "prawdziwych".
+
 ## Złożoność czasowa algorytmu sita Eratostenesa:
 Złożoność czasowa algorytmu sita Eratostenesa to O(n log log n), co oznacza, że czas wykonania algorytmu jest proporcjonalny 
 do n log log n.
