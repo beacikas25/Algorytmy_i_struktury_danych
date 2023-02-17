@@ -10,7 +10,7 @@ Treść:
 
 [Algorytm dołączania nowego elementu do końca listy dwukierunkowej](#Algorytm-dołączania-nowego-elementu-do-końca-listy-dwukierunkowej)
 
-###<a name ="Algorytm-sita Eratostenesa"></a>
+###<a name ="Algorytm-sita-Eratostenesa"></a>
 # Algorytm sita Eratostenesa
 ### Opis algorytmu sita Eratostenesa
 Algorytm sita Eratostenesa jest algorytmem numerycznym służącym do wyznaczania liczb pierwszych w zakresie od 2 do n. 
@@ -65,10 +65,9 @@ jest zadaną liczbą).
 | ------- | ------- |
 | Wyjscie     |   2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 771, 73, 79, 83, 89, 97   |
 
-
 ###<a name ="Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha"></a>
-#Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
-###Opis algorytmu wyszukiwania najdłuższego wspólnego podłańcucha
+# Algorytm wyszukiwania najdłuższego wspólnego podłańcucha
+### Opis algorytmu wyszukiwania najdłuższego wspólnego podłańcucha
 Algorytm wyszukiwania najdłuższego wspólnego podłańcucha (ang. Longest Common Subsequence, LCS) jest algorytmem, który służy do znajdowania najdłuższego podciągu dwóch lub więcej sekwencji, takiego że każdy element tego podciągu występuje w każdej z sekwencji i jest w tej samej kolejności. Algorytm jest często stosowany w różnych dziedzinach, takich jak bioinformatyka, redakcja tekstów i wiele innych.
 
 Algorytm działa w następujący sposób:
@@ -122,11 +121,11 @@ Algorytm wyszukiwania najdłuższego wspólnego podłańcucha może być używan
 | Wyjscie     |   5   |
 
 ###<a name ="Algorytm-dołączania-nowego-elementu-do-końca-listy-dwukierunkowej"></a>
-#Algorytm dołączania nowego elementu do końca listy dwukierunkowej
-###Opis algorytmu dołączania nowego elementu do końca listy dwukierunkowej
+# Algorytm dołączania nowego elementu do końca listy dwukierunkowej
+### Opis algorytmu dołączania nowego elementu do końca listy dwukierunkowej
 Algorytm dodawania nowego elementu do końca listy dwukierunkowej polega na następujących krokach:
 
-1. Tworzenie nowego elementu listy zawierającego wartość, którą chcemy dodawać.
+    1. Tworzenie nowego elementu listy zawierającego wartość, którą chcemy dodawać.
     2. Przeszukiwanie listy dwukierunkowej w poszukiwaniu ostatniego elementu.
     3. Ustawienie wskaźnika next ostatniego elementu na nasz nowy element.
     4. Ustawienie wskaźnika prev naszego nowego elementu na ostatni element.
