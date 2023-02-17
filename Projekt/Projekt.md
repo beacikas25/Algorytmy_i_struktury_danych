@@ -154,7 +154,7 @@ Przykład użycia algorytmu dołączania nowego elementu do końca listy dwukier
 
 ### - Realizacja w C dla algorytmu dołączania nowego elementu do końca listy dwukierunkowej:
 
-[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](***)
+[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](https://github.com/beacikas25/Algorytm_doaczania_nowego_elementu_do_konca_listy_dwukierunkowej/blob/main/Algorytm_dolaczania_nowego_elementu_do_konca_listy_dwukierunkowej.c)
 
 ## Jake dane na wejsciu w algorytm, jakie na wyjsciu:
 | Wejscie  | 1, 2, 3, 4, 5 |
