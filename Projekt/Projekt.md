@@ -140,4 +140,37 @@ KONIEC PROCEDURY
 ```
 W powyższym pseudokodzie, procedura dodaj_element przyjmuje jako argument wartość, którą chcemy dodawać do listy dwukierunkowej. Następnie tworzony jest nowy element z tą wartością i przeszukiwana jest lista w poszukiwaniu ostatniego elementu. Wskaźnik next ostatniego elementu ustawiany jest na nasz nowy element, a wskaźnik prev naszego nowego elementu ustawiany jest na ostatni element.
 
-##
+## Udowodnienie, że algorytm dołączania nowego elementu do końca listy dwukierunkowej jest końcowy
+Algorytm dołączania nowego elementu do końca listy dwukierunkowej jest końcowy, ponieważ jest on bardzo prosty i składa się z kilku kroków, w których każdy krok jest dokładnie określony i nie prowadzi do nieskończonej sekwencji działań.
+
+## Definicja Algorytmu dołączania nowego elementu do końca listy dwukierunkowej
+Algorytm dołączania nowego elementu do końca listy dwukierunkowej jest to proces polegający na dodaniu nowego elementu na końcu listy dwukierunkowej, w której każdy element jest połączony z dwoma innymi elementami: poprzednikiem i następnikiem.
+
+## Złożoność czasowa algorytmu dołączania nowego elementu do końca listy dwukierunkowej:
+Złożoność czasowa algorytmu dołączania nowego elementu do końca listy dwukierunkowej jest stała i wynosi O(1), ponieważ operacje dołączania elementu do listy dwukierunkowej można wykonać w stałym czasie, niezależnie od długości listy.
+
+## Przykład użycia algorytmu dołączania nowego elementu do końca listy dwukierunkowej:
+Przykład użycia algorytmu dołączania nowego elementu do końca listy dwukierunkowej można znaleźć w programach, w których wymagane jest dynamiczne przechowywanie danych, takich jak systemy zarządzania bazami danych, systemy operacyjne i aplikacje do przeglądania stron internetowych. Algorytm może być używany do dodawania nowych elementów do listy oglądanych stron lub do dodawania nowych rekordów do bazy danych.
+
+### - Realizacja w C dla algorytmu dołączania nowego elementu do końca listy dwukierunkowej:
+
+[Algorytm dołączania nowego elementu do końca listy dwukierunkowej](***)
+
+## Jake dane na wejsciu w algorytm, jakie na wyjsciu:
+| Wejscie  | 1, 2, 3, 4, 5 |
+| ------------- | ------------- |
+| Lista dwukierunkowa  | 1, 2, 3, 4, 5 |
+
+# Diagram
+
+## Wejście: 
+L 	 –  	zmienna obsługująca listę
+
+v 	 – 	wartość wprowadzana do elementu
+
+## Wyjście:
+Lista z dołączonym na początku elementem o wartości v.
+
+## Dane pomocnicze:
+
+
