@@ -3,6 +3,7 @@
 ## Data 2023.02.14
 ## Praca wykonala Beata Markevic
 Tresc:
+
 [Algorytm sita Eratostenesa](#Algorytm-sita-Eratostenesa)
 
 [Algorytm wyszukiwania najdłuższego wspólnego podłańcucha](#Algorytm-wyszukiwania-najdłuższego-wspólnego-podłańcucha)
@@ -28,7 +29,7 @@ Algorytm działa w następujący sposób:
     wykonania jest proporcjonalny do n log log n. Jest to jeden z najszybszych algorytmów do wyznaczania liczb pierwszych i 
     jest często stosowany w różnych zastosowaniach, takich jak kryptografia, teoria liczb i wiele innych.
 
-### -Pseudokod dla algorytmu sita Eratostenesa:
+### Pseudokod dla algorytmu sita Eratostenesa:
 
 ```
 1. Stwórz tablicę o długości n+1, gdzie n jest maksymalnym liczbą do przeszukania
@@ -56,7 +57,7 @@ do n log log n.
 Przykład użycia algorytmu sita Eratostenesa może być w znalezieniu wszystkich liczb pierwszych w zakresie od 2 do n (gdzie n 
 jest zadaną liczbą).
 
-### -Realizacja w C dla algorytmu sita Eratostenesa:
+### Realizacja w C dla algorytmu sita Eratostenesa:
 [Algorytm  sita Eratostenesa](***)
 
 ### Jake dane na wejsciu w algorytm, jakie na wyjsciu:
