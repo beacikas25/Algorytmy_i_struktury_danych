@@ -31,6 +31,33 @@ int main() {
 }
 
 
+//PSEUDOKOD
+-> arr[5] = {1,2,3,4,5};
+-> minSum = INT_MAX, maxSum = INT_MIN;
+-> minNum, maxNum;
+
+ petla ( i = 0; i < 5; i++) {
+         sum = 0;
+        petla (int j = 0; j < 5; j++) {
+            jesli (i != j) {
+                sum += arr[j];
+            }
+        }
+        jesli (sum < minSum) {
+            minSum = sum;
+            minNum = i;
+        }
+        jesli (sum > maxSum) {
+            maxSum = sum;
+            maxNum = i;
+        }
+    }
+
+   drukuj: minSum" "maxSum;
+       
+
+    zwracaj;
+}
 
 //1. Utwórz tablicę 5-elementową i wypełnij ją liczbami całkowitymi.
 //2. Zainicjuj zmienne: minSum, maxSum, minNum, maxNum.
