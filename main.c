@@ -1,10 +1,6 @@
-/*
- * Imie: Edvinas
- * Opis: Szukanie słów z hash table o tej samej sumie, tworzenie trie tree z
- * nich, i wyprowadzenie do pliku. Nazwa Pliku: 
- * Egzamin.c 
- * Data: 2023-06-22
- */
+// Beata Markevic
+// 2023-06-22
+ 
 
 // Zadanie na egzamin
 
